@@ -1,0 +1,19 @@
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+
+# Логи и временные файлы
+*.log
+*.tmp
+.DS_Store
