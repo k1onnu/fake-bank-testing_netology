@@ -28,10 +28,8 @@ def open_transfer_menu(driver):
     """Открывает меню перевода по рублёвому счёту"""
     wait = WebDriverWait(driver, 10)
     
-    # Ждём загрузки страницы
     wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
     
-    # Кликаем по карточке "Рубли"
     ruble_card = wait.until(EC.element_to_be_clickable((By.XPATH, "//h2[text()='Рубли']/..")))
     ruble_card.click()
     
